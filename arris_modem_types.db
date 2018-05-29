@@ -1,0 +1,2 @@
+ds                      freq:GAUGE:0:U, power:GAUGE:U:U, snr:GAUGE:0:U, corrected:DERIVE:0:U, uncorrectables:DERIVE:0:U
+us                      symbol_rate:GAUGE:0:U, freq:GAUGE:0:U, power:GAUGE:U:U

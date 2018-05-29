@@ -59,6 +59,28 @@ There are currently no configuration options available.
         Import "mcp3425"
     </Plugin>
 
+### arris\_modem
+
+This module will collect upstream/downstream channel metrics from a DOCSIS3 Arris cable modem.
+
+This module depends on requests and beautifulsoup python modules.
+
+    sudo apt-get install python-requests python-beautifulsoup
+
+- Host: The host attribute of dispatched values.. for naming things. (Default "")
+- Url: Modem status page root URL.  (Default "http://192.168.100.1")
+
+    TypesDB "/opt/collectd_plugins/arris_modem_types.db"
+    LoadPlugin python
+    <Plugin python>
+        ModulePath "/opt/collectd_plugins"
+        Import "arris_modem"
+        <Module arris_modem>
+            Host "mymodem"
+            Url "http://192.168.100.1"
+        </Module>
+    </Plugin>
+
 ## License
 
 MIT License, see LICENSE file.
