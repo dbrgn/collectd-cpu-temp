@@ -70,9 +70,10 @@ This module depends on requests and beautifulsoup python modules.
 
 This module supports the following configuration parameters.
 
-- Host: The host attribute of dispatched values.. for naming things. (Default "")
-- Url: Modem status page root URL.  (Default "http://192.168.100.1")
+- `Host`: The host attribute of dispatched values.. for naming things. (Default "")
+- `Url`: Modem status page root URL.  (Default "http://192.168.100.1")
 
+```
     TypesDB "/opt/collectd_plugins/arris_modem_types.db"
     LoadPlugin python
     <Plugin python>
@@ -83,6 +84,7 @@ This module supports the following configuration parameters.
             Url "http://192.168.100.1"
         </Module>
     </Plugin>
+```
 
 ## License
 
