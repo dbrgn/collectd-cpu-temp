@@ -62,7 +62,7 @@ There are currently no configuration options available.
 
 ### arris\_modem
 
-This module will collect upstream/downstream channel metrics from a DOCSIS3 Arris cable modem and depends on requests and beautifulsoup python modules.
+This module will collect upstream/downstream channel metrics from a DOCSIS3 Arris cable modem.  You must install `requests` and `beautifulsoup` python modules for it to work.
 
     sudo apt-get install python-requests python-beautifulsoup
 
